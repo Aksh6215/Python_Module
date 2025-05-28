@@ -1,0 +1,15 @@
+digraph {
+	A [label="User Input"]
+	B [label="Preprocessing
+(Tokenization, Lemmatization, Removing Noise)"]
+	C [label="Intent Detection
+(TF-IDF Vectorization, Model Prediction)"]
+	D [label="Response Selection
+(Selecting an appropriate response)"]
+	E [label="User Interface
+(Displays response via Streamlit)"]
+	A -> B [label="User types a query"]
+	B -> C [label="Processed text using NLP"]
+	C -> D [label="Predicts user intent"]
+	D -> E [label="Displays chatbot response"]
+}
